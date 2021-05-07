@@ -69,7 +69,7 @@
         app:layout_constraintVertical_bias="0.707" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtGreeting"
         android:layout_width="166dp"
         android:layout_height="34dp"
         android:fontFamily="sans-serif-condensed"
@@ -87,10 +87,11 @@
         app:layout_constraintVertical_bias="0.433" />
 
     <Button
-        android:id="@+id/btn_calcShortcut"
+        android:id="@+id/btnCalculate"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:fontFamily="sans-serif-condensed"
+        android:onClick="calculate"
         android:text="Calculate Now!"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -153,6 +154,7 @@
         android:layout_width="54dp"
         android:layout_height="49dp"
         android:clickable="true"
+        android:onClick="home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.116"
@@ -166,6 +168,7 @@
         android:layout_width="60dp"
         android:layout_height="52dp"
         android:clickable="true"
+        android:onClick="calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"

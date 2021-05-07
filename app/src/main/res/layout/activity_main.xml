@@ -12,6 +12,7 @@
         android:layout_width="150dp"
         android:layout_height="61dp"
         android:fontFamily="sans-serif-condensed"
+        android:onClick="login"
         android:text="Log in"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -27,7 +28,7 @@
         app:strokeWidth="2.5sp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSignup"
         android:layout_width="150dp"
         android:layout_height="61dp"
         android:fontFamily="sans-serif-condensed"
@@ -51,8 +52,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
+        android:hint="Username"
         android:inputType="textPersonName"
-        android:text="Username"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
         android:textColorLink="#FFFFFF"
@@ -95,8 +96,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
+        android:hint="Password"
         android:inputType="textPassword"
-        android:text="password"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"

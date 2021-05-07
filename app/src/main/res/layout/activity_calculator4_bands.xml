@@ -17,10 +17,11 @@
         tools:layout_editor_absoluteY="-169dp">
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/btnMag2"
             android:layout_width="10dp"
             android:layout_height="83dp"
-            app:backgroundTint="#191818"
+            android:onClick="setMag2"
+            app:backgroundTint="#C57500"
             app:cornerRadius="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,9 +31,10 @@
             app:layout_constraintVertical_bias="0.434" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/btnMultiplier"
             android:layout_width="10dp"
             android:layout_height="83dp"
+            android:onClick="setMultiplier"
             app:backgroundTint="#191818"
             app:cornerRadius="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -43,9 +45,10 @@
             app:layout_constraintVertical_bias="0.434" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/btnMag1"
             android:layout_width="10dp"
             android:layout_height="83dp"
+            android:onClick="setMag1"
             app:backgroundTint="#8E6545"
             app:cornerRadius="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -56,9 +59,10 @@
             app:layout_constraintVertical_bias="0.434" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/btnTolerance"
             android:layout_width="10dp"
             android:layout_height="92dp"
+            android:onClick="setTolerance"
             app:backgroundTint="#E4AE09"
             app:cornerRadius="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -80,7 +84,7 @@
             app:srcCompat="@drawable/res" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txtGreeting2"
             android:layout_width="268dp"
             android:layout_height="48dp"
             android:fontFamily="sans-serif-condensed"
@@ -116,14 +120,13 @@
             app:layout_constraintVertical_bias="0.267" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/txtMax"
             android:layout_width="154dp"
             android:layout_height="40dp"
             android:background="#FFFFFF"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal"
-            android:text="10.5 ohms"
             android:textColor="#009688"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -171,14 +174,13 @@
             app:layout_constraintVertical_bias="0.625" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/txtMin"
             android:layout_width="154dp"
             android:layout_height="40dp"
             android:background="#FFFFFF"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal"
-            android:text="9.5 ohms"
             android:textColor="#009688"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -190,14 +192,13 @@
             app:layout_constraintVertical_bias="0.778" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/txtTolerance"
             android:layout_width="154dp"
             android:layout_height="40dp"
             android:background="#FFFFFF"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal"
-            android:text="5 %"
             android:textColor="#009688"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -227,14 +228,13 @@
             app:layout_constraintVertical_bias="0.702" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/txtResistance"
             android:layout_width="154dp"
             android:layout_height="40dp"
             android:background="#DDFFFFFF"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal"
-            android:text="10 ohms"
             android:textColor="#009688"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -311,6 +311,7 @@
         android:layout_width="60dp"
         android:layout_height="52dp"
         android:clickable="true"
+        android:onClick="calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -326,6 +327,7 @@
         android:layout_marginEnd="304dp"
         android:layout_marginRight="304dp"
         android:clickable="true"
+        android:onClick="home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.849"

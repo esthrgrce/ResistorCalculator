@@ -215,7 +215,7 @@
             app:srcCompat="@drawable/res" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/btnMultiplier"
             android:layout_width="10dp"
             android:layout_height="83dp"
             app:backgroundTint="#191818"
@@ -241,7 +241,7 @@
             app:layout_constraintVertical_bias="0.381" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/btnMag1"
             android:layout_width="10dp"
             android:layout_height="83dp"
             app:backgroundTint="#191818"
@@ -254,7 +254,7 @@
             app:layout_constraintVertical_bias="0.38" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/btnTolerance"
             android:layout_width="10dp"
             android:layout_height="92dp"
             app:backgroundTint="#8E6545"
@@ -375,6 +375,7 @@
         android:layout_width="58dp"
         android:layout_height="49dp"
         android:clickable="true"
+        android:onClick="calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -390,6 +391,7 @@
         android:layout_marginEnd="304dp"
         android:layout_marginRight="304dp"
         android:clickable="true"
+        android:onClick="home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.849"

@@ -36,10 +36,11 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn4Bands"
         android:layout_width="150dp"
         android:layout_height="61dp"
         android:fontFamily="sans-serif-condensed"
+        android:onClick="bands4"
         android:text="4 bands"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -54,10 +55,11 @@
         app:strokeWidth="2.5sp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn6Bands"
         android:layout_width="150dp"
         android:layout_height="61dp"
         android:fontFamily="sans-serif-condensed"
+        android:onClick="bands6"
         android:text="6 bands"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -73,10 +75,11 @@
         app:strokeWidth="2.5sp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn5Bands"
         android:layout_width="150dp"
         android:layout_height="61dp"
         android:fontFamily="sans-serif-condensed"
+        android:onClick="bands5"
         android:text="5 bands"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -109,6 +112,8 @@
         android:layout_width="60dp"
         android:layout_height="52dp"
         android:clickable="true"
+        android:contentDescription="TODO"
+        android:onClick="calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -124,6 +129,7 @@
         android:layout_marginEnd="304dp"
         android:layout_marginRight="304dp"
         android:clickable="true"
+        android:onClick="home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.849"
@@ -146,7 +152,7 @@
         app:srcCompat="@drawable/resist" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtGreeting2"
         android:layout_width="195dp"
         android:layout_height="44dp"
         android:fontFamily="sans-serif-condensed"
