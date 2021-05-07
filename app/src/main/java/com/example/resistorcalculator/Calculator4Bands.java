@@ -115,7 +115,6 @@ public class Calculator4Bands extends AppCompatActivity {
         }
         txtTolerance.setText(String.valueOf(tolerance*100) + " %");
     }
-<<<<<<< HEAD
 
     public void setTolerance(View view){
         int tol;
