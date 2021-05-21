@@ -178,10 +178,11 @@
         app:srcCompat="@drawable/calc" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/btnNotes"
         android:layout_width="56dp"
         android:layout_height="48dp"
         android:clickable="true"
+        android:onClick="notes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.856"

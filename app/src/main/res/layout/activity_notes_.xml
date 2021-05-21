@@ -40,6 +40,7 @@
         android:layout_width="56dp"
         android:layout_height="48dp"
         android:clickable="true"
+        android:onClick="notes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.884"
@@ -53,6 +54,7 @@
         android:layout_width="60dp"
         android:layout_height="52dp"
         android:clickable="true"
+        android:onClick="calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -68,6 +70,7 @@
         android:layout_marginEnd="304dp"
         android:layout_marginRight="304dp"
         android:clickable="true"
+        android:onClick="home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.849"
@@ -122,18 +125,33 @@
             android:text="Resistors are electronic components which have a specific, never-changing electrical resistance. The resistor's resistance limits the flow of electrons through a circuit."
             android:textColor="#CBEA4A57"
             android:textSize="18sp"
-            android:textStyle="normal|bold" />
+            android:textStyle="normal|bold"
+            android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="match_parent"
-            android:layout_height="156dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:text="They are passive components, meaning they only consume power (and can't generate it). Resistors are usually added to circuits where they complement active components like op-amps, microcontrollers, and other integrated circuits. Commonly resistors are used to limit current, divide voltages, and pull-up I/O lines."
             android:textColor="#CBEA4A57"
-            android:textSize="18sp"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:text="Resistors have colored bands that indicate their values. The more bands a resistor has, the higher the precision of its value is. The most basic resistor has 4 bands. The first 2 bands indicate the magnitude. The third band indicates the multiplier for the magnitude. Finally, the last band indicate the tolerance of the resistor. The values for these bands depend on their respective colors."
+            android:textColor="#CBEA4A57"
+            android:textSize="16sp"
             android:textStyle="normal|bold" />
     </LinearLayout>
 

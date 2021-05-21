@@ -28,6 +28,7 @@ public class Calculator4Bands extends AppCompatActivity {
     private int mag1, mag2, multiplier;
     private double tolerance, min, max;
     private TextView txtResistance, txtTolerance, txtMin, txtMax;
+    private String username;
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -35,6 +36,8 @@ public class Calculator4Bands extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator4_bands);
+        Intent intent = getIntent();
+        username = intent.getStringExtra("username");
         btnMag1 = findViewById(R.id.btnMag1);
         btnMag2 = findViewById(R.id.btnMag2);
         btnMultiplier = findViewById(R.id.btnMultiplier);
@@ -61,13 +64,19 @@ public class Calculator4Bands extends AppCompatActivity {
 
     public void calculate(View view){
         Intent intent = new Intent(this, Calculator_Activity.class);
-        intent.putExtra("username", "Esther");
+        intent.putExtra("username", username);
         startActivity(intent);
     }
 
     public void home(View view){
         Intent intent = new Intent(this, Home_Activity.class);
-        intent.putExtra("username","Esther");
+        intent.putExtra("username",username);
+        startActivity(intent);
+    }
+
+    public void notes(View view){
+        Intent intent = new Intent(this, Notes_Activity.class);
+        intent.putExtra("username",username);
         startActivity(intent);
     }
 

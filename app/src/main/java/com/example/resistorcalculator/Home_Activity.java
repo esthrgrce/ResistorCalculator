@@ -19,10 +19,8 @@ public class Home_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_);
-
         txtGreeting = findViewById(R.id.txtGreeting);
         btnCalculate = findViewById(R.id.btnCalculate);
-
         Intent intent = getIntent();
         username = intent.getStringExtra("username");
         txtGreeting.setText("Hi " + username);
@@ -38,7 +36,13 @@ public class Home_Activity extends AppCompatActivity {
 
     public void home(View view){
         Intent intent = new Intent(this, Home_Activity.class);
-        intent.putExtra("username","Esther");
+        intent.putExtra("username",username);
+        startActivity(intent);
+    }
+
+    public void notes(View view){
+        Intent intent = new Intent(this, Notes_Activity.class);
+        intent.putExtra("username",username);
         startActivity(intent);
     }
 }

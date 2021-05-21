@@ -29,14 +29,17 @@ public class Calculator_Activity extends AppCompatActivity {
 
     public void bands4(View view){
         Intent intent = new Intent(this, Calculator4Bands.class);
+        intent.putExtra("username",username);
         startActivity(intent);
     }
     public void bands5(View view){
         Intent intent = new Intent(this, Calculator5Bands.class);
+        intent.putExtra("username",username);
         startActivity(intent);
     }
     public void bands6(View view){
         Intent intent = new Intent(this, Calculator6Bands.class);
+        intent.putExtra("username",username);
         startActivity(intent);
     }
 
@@ -48,7 +51,13 @@ public class Calculator_Activity extends AppCompatActivity {
 
     public void home(View view){
         Intent intent = new Intent(this, Home_Activity.class);
-        intent.putExtra("username","Esther");
+        intent.putExtra("username",username);
+        startActivity(intent);
+    }
+
+    public void notes(View view){
+        Intent intent = new Intent(this, Notes_Activity.class);
+        intent.putExtra("username",username);
         startActivity(intent);
     }
 }
